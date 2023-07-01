@@ -1,0 +1,38 @@
+header {
+    background: #FFAB08;
+    color: #fff;
+    max-width: 100%;
+    height: 466px;
+}
+
+.header__logo {
+    display: block;
+    margin: 0 auto;
+    padding: 21.85px;
+}
+
+.header__info {
+    display: flex;
+    justify-content: center;
+}
+
+.header__text {
+    padding: 46px 0 0 21px;
+
+    h1{
+        width: 437px;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 120%;
+        padding-bottom: 52px;
+    
+        span{
+            color: #FF5C00;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

@@ -1,0 +1,42 @@
+.eat-cats{
+    display: flex;
+    margin: 48px auto 0 auto;
+    max-width: 1231px;
+}
+
+.eat{
+    display: flex;
+    justify-content: center;
+    margin-right: 24px;
+    cursor: pointer;
+    min-width: 126px;
+    height: 40px;
+
+    &:hover{
+        border: 1px solid #F86310;
+        border-radius: 50px;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    h4{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        padding: 8px 0 0 8px;
+        margin: 0;
+    }
+
+    img{
+        padding-top: 8px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.choose-cat{
+    background: #FFAB08;
+    border-radius: 50px;
+}

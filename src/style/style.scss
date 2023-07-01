@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+@import './header.scss';
+@import './cats.scss';
+@import './content.scss';
+@import './card.scss';
+@import './delivery.scss';
+@import './footer.scss';
+@import './media.scss';
+@import './product.scss';
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

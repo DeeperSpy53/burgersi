@@ -1,0 +1,247 @@
+@media (max-width: 1024px){
+    .eat-cats{
+        max-width: 1024px;
+        overflow: auto;
+        overflow-y: hidden;
+
+        margin-left: 32px;
+    }
+
+    .wrapper{
+        max-width: 1024px;
+    }
+
+    // footer
+    .footer{
+        margin: 0 32px 0 32px;
+    }
+
+    .copyright{
+        margin-left: 32px;
+    }
+
+    .footer__wrapper{
+        margin-left: 242px;
+
+        &:first-child{
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header__info{
+        img{
+            width: 227px;
+            height: 229px;
+        }
+
+        h1{
+            width: 325px;
+            font-size: 36px;
+            padding-bottom: 26px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .eat{
+        width: 97px;
+        height: 30px;
+
+        h4{
+            padding: 7px 8px;
+            line-height: 16px;
+            font-size: 12px;
+        }
+
+        img{
+            padding-top: 3px;
+        }
+    }
+    .eat-cats{
+        max-width: 768px;
+    }
+
+    .wrapper{
+        max-width: 768px;
+        display: block;
+    }
+
+    main{
+        flex-direction: column;
+        background: #fff;
+    }
+    
+    .cart__items{
+        display: none;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .cart{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+        position: relative;
+        z-index: 10;
+        margin: 30px 0 0 64px;
+        width: 145px;
+        height: 48px;
+        transition: all 0.5s ease-out;
+
+        &:hover{
+            border-radius: 18px 18px 0 0;
+            width: 300px;
+            transition: all 0.5s ease-in;
+
+            .cart__items{
+                display: block;
+            }
+        }
+
+        &:has(.cart__hide:active){
+            width: 145px;
+            transition: all 0.5s ease-in;
+    
+            .cart__items{
+                display: none;
+            }
+        }
+
+        &:has(.cart__footer button:target){
+            width: 145px;
+            transition: all 0.5s ease-in;
+    
+            .cart__items{
+                display: none;
+            }
+        }
+    }
+
+    .cart__counter{
+        display: none;
+    }
+
+    .cart-item__counter{
+        button, p{
+            font-size: 12px;
+        }
+
+        p{
+            padding-top: 6px;
+        }
+        width: 74px;
+        height: 30px;
+    }
+    
+    .cart__total-price{
+        font-size: 12px;
+    }
+
+    .cart__footer{
+        button{
+            margin: 24px 0 8px 15px;
+            font-size: 12px;
+            width: 280px;
+            height: 30px;
+        }
+    }
+
+    .cart__free-delivery{
+        padding-bottom: 24px;
+    }
+
+    .cart__info{
+        padding-top: 16px;
+        span{
+            width: 32px;
+            height: 16px;
+
+            font-size: 10px;
+            padding-top: 1px;
+        }
+
+        h2{
+            font-size: 16px;
+        }
+    }
+
+    .cat{
+        margin: 30px 0 0 64px;
+
+        h2{
+            font-size: 28px;
+        }
+    }
+
+    .cat__wrapper{
+        margin: 0;
+    }
+
+    .eat-item{
+        width: 145px;
+        height: 243px;
+        margin: 4px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+        
+        img{
+            width: 137px;
+            height: 120px;
+            margin: 0;
+        }
+
+        h3{
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+
+        h4{
+            margin: 4px 0 0 0;
+            font-size: 12px;
+        }
+
+        p{
+            margin: 16px 0 0 0;
+            font-size: 12px;
+        }
+
+        button{
+            margin: 7px 0 0 0;
+            width: 137px;
+            height: 30px;
+
+            font-size: 12px;
+        }
+    }
+
+    .cart__hide{
+        display: block;
+    }
+
+    footer{
+        margin-left: 40px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer__wrapper{
+        margin: 0;
+
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .footer__logo{
+        width: 198.82px;
+        height: 43.63px;
+    }
+}

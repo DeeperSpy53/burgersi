@@ -1,0 +1,156 @@
+.delivery{
+    display: flex;
+    position: relative;
+}
+
+.delivery__modal {
+    z-index: 15;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.del__orange-box {
+    width: 342px;
+    height: 432px;
+
+    background: #FFAB08;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 24px 0 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.del__white-box {
+    background: #F9F9F9;
+    width: 342px;
+    height: 432px;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 24px 24px 0;
+
+    form{
+        margin: 44px 0 0 24px;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        padding-bottom: 16px;
+    }
+
+    input[type="text"], input[type="tel"]{
+        height: 40px;
+
+        background: #FFFFFF;
+        border: 1px solid #F2F2F3;
+        border-radius: 12px;
+        outline: none;
+
+        padding-left: 12px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 8px;
+
+        &::placeholder{
+            color: #B1B1B1;
+        }
+    }
+
+    fieldset{
+        margin: 8px 0 8px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        position: absolute;
+        width: 294px;
+        height: 40px;
+        bottom: 24px;
+        
+        background: #FF7020;
+        border-radius: 12px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFFFFF; 
+
+        &:hover{
+            background: #FFAB08;
+            color: #FFFFFF;
+        }
+
+        &:active{
+            transform: translateY(2px);
+            box-shadow: 10px 5px 25px rgb(185, 185, 185);
+
+            background: #F86310;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.w294px{
+    width: 294px;
+}
+
+.white-box__radio{
+    padding-bottom: 12px;
+
+    &:last-child{
+        padding-bottom: 0;
+    }
+    label{
+        padding-left: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.white-box__wrapper{
+    display: flex;
+
+    input{
+        width: 136px;
+        margin-right: 8px;
+    }
+}
+
+.del__cross{
+    position: absolute;
+    cursor: pointer;
+
+    right: 0;
+    margin: 28px;
+}
+
+.del__cross-1{
+    position: absolute;
+    width: 1px;
+    height: 20px;
+
+    background: #B1B1B1;
+    transform: rotate(-135deg);
+}
+
+.del__cross-2{
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    
+    background: #B1B1B1;
+    transform: rotate(-45deg);
+}
