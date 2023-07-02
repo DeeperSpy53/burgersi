@@ -1,6 +1,10 @@
 main{
     background: #F9F9F9;
     padding-bottom: 100px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .wrapper{
